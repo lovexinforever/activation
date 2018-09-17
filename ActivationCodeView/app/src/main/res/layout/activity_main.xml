@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_activated_code"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入激活码(输入框每个可以输入四个)"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginTop="100dp"
+        />
+    <com.tim.activatecodeview.ActivationCodeView
+        android:id="@+id/icv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="26dp"
+        app:icv_et_bg_focus="@drawable/shape_icv_et_bg_focus"
+        app:icv_et_bg_normal="@drawable/shape_icv_et_bg_normal"
+        app:icv_et_divider_drawable="@drawable/shape_divider_identifying"
+        app:icv_et_number="5"
+        app:icv_text_bg_alpha="100"
+        app:icv_et_text_color="#fff"
+        app:icv_text_count_num="4"
+        app:icv_et_width="60dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入激活码(输入框每个可以输入1个)"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="18dp"
+        />
+    <com.tim.activatecodeview.ActivationCodeView
+        android:id="@+id/icv2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="26dp"
+        app:icv_et_bg_focus="@drawable/shape_icv_et_bg_focus"
+        app:icv_et_bg_normal="@drawable/shape_icv_et_bg_normal"
+        app:icv_et_divider_drawable="@drawable/shape_divider_identifying"
+        app:icv_et_number="5"
+        app:icv_text_bg_alpha="100"
+        app:icv_et_text_color="#fff"
+        app:icv_text_count_num="1"
+        app:icv_et_width="60dp"/>
+</LinearLayout>
